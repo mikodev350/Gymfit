@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    body{
+      background: #333;
+    }
+    
+
+/*navbar */
+
+
+
+
+
+
+    .wrapper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 800px;
+      height: 450px;
+      display: flex;
+      box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    }
+    
+    .input-info {
+        background-color: #eee;
+        border: none;
+        padding: 10px 13px;
+        margin: 5px 0;
+        width: 100%;
+    }
+    .wrapper .left{
+      width: 50%;
+      background: linear-gradient(to right,#007BFF,#0352a7);
+      padding: 30px 25px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      text-align: center;
+      color: #fff;
+    }
+    
+    .wrapper .left img{
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .wrapper .left h3{
+      margin-bottom: 10px;
+    }
+    
+    .wrapper .left p{
+      font-size: 12px;
+    }
+    
+    .wrapper .right{
+      width: 65%;
+      background: #fff;
+      padding: 30px 25px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    
+    .wrapper .right .info,
+    .wrapper .right .days{
+      margin-bottom: 25px;
+    }
+    
+    .wrapper .right .info h3,
+    .wrapper .right .days h3{
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e0e0e0;
+        color: #353c4e;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    
+    .wrapper .right .info_data,
+    .wrapper .right .days_data{
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .wrapper .right .info_data .data,
+    .wrapper .right .days_data .data{
+      width: 45%;
+    }
+    
+    .wrapper .right .info_data .data h4,
+    .wrapper .right .days_data .data h4{
+        color: #353c4e;
+        margin-bottom: 5px;
+    }
+    
+    .wrapper .right .info_data .data p,
+    .wrapper .right .days_data .data p{
+      font-size: 13px;
+      margin-bottom: 10px;
+      color: #919aa3;
+    }
+    
+    .wrapper .Modification ul{
+      display: flex;
+      margin-left: 350px;
+
+    }
+    
+   
+    .wrapper .Modification ul li{
+      width: 35px;
+      height: 35px;
+      background: linear-gradient(to right,#0352a7,#007BFF);
+      margin-right: 10px;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 35px;
+    }
+    
+    .wrapper .Modification ul li a{
+      color :#fff;
+      display: block;
+      font-size: 18px;
+    }
+    
+    button {
+	border-radius: 20px;
+	border: 1px solid #00438a;
+	background-color: #00438a;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+#look_Pasword{
+  margin-top: 38px;
+  display: flex;
+  cursor: pointer;
+
+}
+#look_Pasword2{
+  margin-top: 32px;
+  display: flex;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 650px) {
+        .wrapper{
+            width: 550px;
+            height: 450px;
+             display: flex;
+        }
+        .wrapper .Modification ul{
+             display: flex;
+              margin-left: 250px;
+         }
+         #look_Pasword{
+          display: flex;
+          margin-top: 59px;
+
+         }
+        button {
+	      border-radius: 15px;
+	      border: 1px solid #00438a;
+	      background-color: #00438a;
+	      color: #FFFFFF;
+	      font-size: 10px;
+	      font-weight: bold; 
+     	  padding: 10px 30px;
+	      letter-spacing: 1px;
+	      text-transform: uppercase;
+	      transition: transform 75ms ease-in;
+      }
+    }

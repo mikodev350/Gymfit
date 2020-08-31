@@ -1,0 +1,155 @@
+body{
+	background-color: #060A0B;
+
+}
+
+/*  Tableux du Programme */
+#table{	
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+	font-family: sans-serif;
+
+}
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+  background-color:white;
+
+}
+
+.table th{
+	background-color:#007BFF;
+	color:#ffffff;
+}
+
+
+
+/*responsive*/
+
+@media(max-width: 600px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 280px;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		color:#007BFF;
+		text-align: left;
+	}
+}
+
+
+/* prix check*/
+
+
+.table-precition{
+	background-color: #060A0B;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: min(1500px, 100%);
+	margin: auto;
+  }
+  
+  .info-offre{
+	flex: 1;
+	max-width: 360px;
+	background-color: #fff;
+	margin: 20px 10px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	color: black;
+	transition: .3s linear;
+  }
+  
+  .pricing-card-header{
+	background-color: #007BFF;
+	display: inline-block;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 0 0 20px 20px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: .6s linear;
+  }
+  
+  .info-offre:hover .pricing-card-header{
+	box-shadow: 0 0 0 310px #007BFF;
+  }
+  
+  .price{
+	font-size: 75px;
+	color: #007BFF;
+	margin: 40px 0;
+	transition: .2s linear;
+  }
+  
+  .price sup, .price span{
+	font-size: 22px;
+	font-weight: 700;
+  }
+  
+  .info-offre:hover ,.pricing-card:hover .price{
+	color: #fff;
+  }
+  
+  .info-offre li{
+	font-size: 16px;
+	padding: 10px 0;
+	text-transform: uppercase;
+  }
+  
+  .order-btn{
+	display: inline-block;
+	margin-bottom: 35px;
+	margin-top: 70px;
+	border: 2px solid #007BFF;
+	color: #007BFF;
+	padding: 18px 40px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: .3s linear;
+  }
+  
+  .order-btn:hover{
+	background-color:#007BFF;
+	color: #fff;
+  }
+  
+  @media screen and (max-width:1100px){
+	.info-offre{
+	  flex: 50%;
+	}
+  }
+  
