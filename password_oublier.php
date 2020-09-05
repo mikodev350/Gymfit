@@ -80,7 +80,7 @@ if(isset($_POST['confirmez'])){
     <link href="css/all.min.css" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <link rel="stylesheet" type="text/css" href="css/all.css">
-    <title>Document</title>
+    <title>Forgot your password</title>
     <script src="js/eyes.js" defer></script>
 
 </head>
