@@ -80,7 +80,7 @@
                   Nombredecheck += (Days[i].checked)? 1 : 0;
                 }
                 if (Nombredecheck>limit){
-                   alert("You can only select a maximum of "+limit+" checkboxes")
+                   alert("You can only select a maximum of "+limit+" Session")
                   this.checked=false;
          
              }
