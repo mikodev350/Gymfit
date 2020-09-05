@@ -9,7 +9,7 @@
     
 
 
-    <title>Document</title>
+    <title>Gymfit</title>
 </head>
 <body>
     <!--navbar-->
