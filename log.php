@@ -11,7 +11,7 @@ include './login._ferifie.php';
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <script src="js/eyes.js" defer></script>
 
-    <title>Document</title>
+    <title>login or sign up</title>
 </head>
 <body>
 <div class="container" id="container">
